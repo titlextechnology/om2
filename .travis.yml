@@ -18,6 +18,6 @@ before_script:
   - composer require guzzle/http:${GUZZLE_VERSION} --no-update
   - composer install -n --dev --prefer-source
 
-script: vendor/bin/phpcs --standard=PSR2 vendor/omnipay/omnipay/src/Omnipay/Adyen && vendor/bin/phpunit vendor/omnipay/omnipay/src/Omnipay/Adyen --coverage-text
+script: vendor/bin/phpcs --standard=PSR2 vendor/omnipay/omnipay/src/Omnipay/Adyen && vendor/bin/phpunit --coverage-text vendor/omnipay/omnipay/src/Omnipay/Adyen
 
-script: vendor/bin/phpcs --standard=PSR2 vendor/omnipay/omnipay/tests/Omnipay/Adyen && vendor/bin/phpunit vendor/omnipay/omnipay/tests/Omnipay/Adyen --coverage-text
+script: vendor/bin/phpcs --standard=PSR2 vendor/omnipay/omnipay/tests/Omnipay/Adyen && vendor/bin/phpunit --coverage-text vendor/omnipay/omnipay/tests/Omnipay/Adyen
