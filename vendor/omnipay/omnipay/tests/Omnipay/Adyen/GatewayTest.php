@@ -2,6 +2,9 @@
 
 namespace Omnipay\Adyen;
 
+$autoloader = require __DIR__.'/../../../../../autoload.php';
+$autoloader->add('Omnipay', __DIR__ . '/../../');
+
 use Omnipay\GatewayTestCase;
 
 class GatewayTest extends GatewayTestCase
